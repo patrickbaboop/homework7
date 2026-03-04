@@ -1,1 +1,1 @@
-https://github.com/patrickbaboop/homework7.git
+https://patrickbaboop.github.io/homework7/
