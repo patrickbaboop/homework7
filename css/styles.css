@@ -4,6 +4,7 @@
    html {
     box-sizing: border-box;
   }
+  
   *, *:before, *:after {
     box-sizing: inherit;
   }
@@ -11,19 +12,20 @@
   /* =========================
      Global styles
      ========================= */
+  
   body {
-    margin: 0; /* HW7 #3d */
+    margin: 0;
     font-family: "Merriweather", serif;
     line-height: 1.6;
     color: #111827;
   }
   
-  /* Content wrapper (HW7 #1b, #2d, #3a, #4f) */
+  /* Content Wrapper */
   .content-wrap {
-    max-width: 950px;   /* HW7 #2d */
-    margin: 0 auto;     /* HW7 #1b */
-    padding: 50px;      /* HW7 #3a */
-    overflow: hidden;   /* HW7 #4f (contains floats) */
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
   }
   
   /* Headings */
@@ -32,12 +34,12 @@
   }
   
   h2 {
-    margin-top: 0; /* HW7 #3c */
+    margin-top: 0;
   }
   
   header h1,
   header h2 {
-    margin: 0; /* HW7 #4d */
+    margin: 0;
   }
   
   h1 {
@@ -51,25 +53,24 @@
   }
   
   h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin-bottom: 6px;
+    font-size: 1.1rem;
   }
   
   /* Links */
   a {
     color: #0f766e;
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
     font-weight: 600;
   }
+  
   a:hover {
     text-decoration: underline;
   }
   
   /* =========================
-     Section colors (keep from HW6 style)
+     Section Colors
      ========================= */
+  
   header {
     background: #0B132B;
     color: #F7F7FF;
@@ -88,27 +89,29 @@
   footer {
     background: #0B132B;
     color: #F7F7FF;
-    text-align: center; /* HW7 #3e */
+    text-align: center;
   }
   
-  /* Footer link spacing (HW7 #3g) */
+  /* Footer links spacing */
+  
   .contact-info a {
-    padding: 10px;            /* HW7 #3g */
-    display: inline-block;    /* HW7 #3g */
+    padding: 10px;
+    display: inline-block;
   }
   
   /* =========================
-     Header image styles (HW7 #4 + #6)
+     Profile Image
      ========================= */
+  
   .profile-img {
-    width: 300px;       /* HW7 #4b */
-    border-radius: 50%; /* HW7 #4c */
-    /* HW7 #6f: removed float/margin because column styles handle layout */
+    width: 300px;
+    border-radius: 50%;
   }
   
   /* =========================
-     Columns (HW7 #6d, #6e)
+     Column Layout
      ========================= */
+  
   .column-narrow {
     width: 30%;
     float: left;
@@ -122,40 +125,36 @@
     min-height: 225px;
   }
   
-  /* Work job blocks spacing */
+  /* Job blocks */
+  
   .job-item {
     margin-top: 25px;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-    overflow: hidden; /* helps contain floats inside each job item */
+    border-top: 1px solid rgba(255,255,255,0.3);
+    overflow: hidden;
   }
   
   .work ul {
-    margin: 8px 0 0 18px;
+    margin-left: 20px;
   }
   
-  /* Small spacing helper */
-  .links {
-    margin-top: 12px;
-  }
+  /* =========================
+     Responsive
+     ========================= */
   
-  /* Mobile: stack columns */
   @media (max-width: 820px) {
+  
     .column-narrow,
     .column-wide {
       width: 100%;
       float: none;
-      min-height: 0;
       padding-right: 0;
     }
   
     .profile-img {
-      width: 220px;
+      width: 200px;
       display: block;
-      margin: 0 auto 18px auto;
+      margin: 0 auto 20px auto;
     }
   
-    footer {
-      text-align: center;
-    }
   }
