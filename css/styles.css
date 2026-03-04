@@ -1,6 +1,7 @@
 /* =========================
    Box Model Fix (HW7 #5)
    ========================= */
+
    html {
     box-sizing: border-box;
   }
@@ -10,36 +11,38 @@
   }
   
   /* =========================
-     Global styles
+     Global Styles
      ========================= */
   
   body {
-    margin: 0;
+    margin: 0; /* HW7 step 3d */
     font-family: "Merriweather", serif;
     line-height: 1.6;
     color: #111827;
   }
   
   /* Content Wrapper */
+  
   .content-wrap {
-    max-width: 950px;
+    max-width: 950px; /* HW7 step 2d */
     margin: 0 auto;
-    padding: 50px;
-    overflow: hidden;
+    padding: 50px; /* HW7 step 3a */
+    overflow: hidden; /* HW7 step 4f */
   }
   
   /* Headings */
+  
   h1, h2, h3 {
     font-family: "Poppins", sans-serif;
   }
   
   h2 {
-    margin-top: 0;
+    margin-top: 0; /* HW7 step 3c */
   }
   
   header h1,
   header h2 {
-    margin: 0;
+    margin: 0; /* HW7 step 4d */
   }
   
   h1 {
@@ -57,6 +60,7 @@
   }
   
   /* Links */
+  
   a {
     color: #0f766e;
     text-decoration: none;
@@ -86,16 +90,23 @@
     color: #F7F7FF;
   }
   
+  .skills {
+    background: #5BC0BE;
+    color: #111827;
+  }
+  
   footer {
     background: #0B132B;
     color: #F7F7FF;
-    text-align: center;
+    text-align: center; /* HW7 step 3e */
   }
   
-  /* Footer links spacing */
+  /* =========================
+     Footer Contact Links
+     ========================= */
   
   .contact-info a {
-    padding: 10px;
+    padding: 10px; /* HW7 step 3g */
     display: inline-block;
   }
   
@@ -104,8 +115,8 @@
      ========================= */
   
   .profile-img {
-    width: 300px;
-    border-radius: 50%;
+    width: 300px; /* HW7 step 4b */
+    border-radius: 50%; /* HW7 step 4c */
   }
   
   /* =========================
@@ -125,7 +136,7 @@
     min-height: 225px;
   }
   
-  /* Job blocks */
+  /* Project blocks */
   
   .job-item {
     margin-top: 25px;
@@ -134,12 +145,14 @@
     overflow: hidden;
   }
   
-  .work ul {
+  /* Lists */
+  
+  ul {
     margin-left: 20px;
   }
   
   /* =========================
-     Responsive
+     Responsive Design
      ========================= */
   
   @media (max-width: 820px) {
@@ -149,6 +162,7 @@
       width: 100%;
       float: none;
       padding-right: 0;
+      min-height: 0;
     }
   
     .profile-img {
